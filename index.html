@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derrick Karake | Full-Stack Engineer — Azure Cloud</title>
+    <meta
+      name="description"
+      content="Derrick Karake — full-stack software engineer specializing in Azure cloud architecture, production data systems, and enterprise web platforms."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar" aria-label="Primary">
+          <span class="brand">DK</span>
+          <div class="topbar-links">
+            <a href="#systems">Systems</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Full-Stack Engineer · Azure Cloud · Systems Builder</p>
+            <h1>Derrick Karake</h1>
+            <p class="hero-summary">
+              Full-stack software engineer specializing in <strong>Azure cloud architecture</strong> and production data systems. I design, build, and ship enterprise platforms end-to-end — from Snowflake and Node.js APIs to Azure AD SSO, Blob Storage, and containerized deployments on App Service.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="./Derrick_Karake_Resume.pdf" target="_blank" rel="noreferrer">
+                Download Resume (PDF)
+              </a>
+              <a class="button button-secondary" href="https://github.com/derrickkarake" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a class="button button-secondary" href="mailto:karakederrick@gmail.com">
+                Email
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-card">
+              <p class="panel-label">Based In</p>
+              <p class="panel-value">Oklahoma City, Oklahoma</p>
+            </div>
+            <div class="panel-card">
+              <p class="panel-label">Core Focus</p>
+              <p class="panel-value">Azure cloud, full-stack systems, data platforms</p>
+            </div>
+            <div class="panel-card">
+              <p class="panel-label">Contact</p>
+              <p class="panel-value">
+                <a href="tel:+14058879145">405-887-9145</a><br />
+                <a href="mailto:karakederrick@gmail.com">karakederrick@gmail.com</a>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="metrics-section" aria-label="Selected results">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Outcomes</p>
+            <h2>Impact in production</h2>
+          </div>
+
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <p class="metric-value">$2.5M</p>
+              <p class="metric-label">Projected annual savings from real-time data acquisition pipelines</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-value">$40K/mo</p>
+              <p class="metric-label">Recurring savings from eliminating third-party data software</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-value">97%+</p>
+              <p class="metric-label">Field data reliability after pipeline + device overhaul (from &lt;80%)</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-value">5,000+</p>
+              <p class="metric-label">TIFF images processed daily by a fine-tuned BERT extraction system</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section" id="systems">
+          <div class="section-heading">
+            <p class="eyebrow">Systems I've Built</p>
+            <h2>Enterprise platforms on Azure</h2>
+          </div>
+          <p class="section-intro">
+            The systems below are production platforms I designed and shipped end-to-end — cloud architecture, authentication, data, APIs, frontend, testing, and deployment. Each is currently in use by engineering and operations teams.
+          </p>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-tag">Azure · Full-Stack · Production</div>
+              <h3>Casing Procurement &amp; Demand Forecast Platform</h3>
+              <p class="project-description">
+                Sole architect and developer of an enterprise React/TypeScript + Node.js/Express platform used daily by drilling engineers and supply chain teams at Devon Energy. Migrated a legacy Python/Streamlit prototype into a containerized, audit-compliant Azure deployment with SSO, role-based access, and a full Snowflake audit trail.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Azure</span>
+                  <span class="detail-value">App Service, Container Registry, Blob Storage (SAS URLs), Azure AD / MSAL, Logic Apps, Microsoft Graph API</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Stack</span>
+                  <span class="detail-value">React 18, TypeScript, Vite, MUI, Node.js, Express, Snowflake, Docker, Nginx</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Highlights</span>
+                  <span class="detail-value">Azure AD SSO + RBAC (3-tier), multi-stage Docker + ACR pipeline, SAS-secured document downloads, full audit trail, cron email pipeline with retry + missed-run recovery</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Testing</span>
+                  <span class="detail-value">Playwright E2E (admin, forecasting, audit, mobile) + Vitest unit tests</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-tag">Data Engineering · IoT · Azure</div>
+              <h3>Real-Time Frac Data Acquisition Pipeline</h3>
+              <p class="project-description">
+                End-to-end ingestion system that collects, validates, and streams high-frequency telemetry from frac fleets into an OSIsoft PI time-series historian. Replaced third-party cellular links with direct VPN in partnership with IT, moving field data reliability from below 80% to above 97%.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Stack</span>
+                  <span class="detail-value">Python, PySpark, PI Web API, Serial I/O, Azure, Node-RED</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Impact</span>
+                  <span class="detail-value">$2.5M projected annual savings · $40K/month recurring savings · 97%+ data completeness</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Scale</span>
+                  <span class="detail-value">~80 high-frequency CSV files per frac fleet, daily, with gap/spike validation and automated error handling</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-tag">NLP · Deep Learning · Production</div>
+              <h3>BERT Document Intelligence System</h3>
+              <p class="project-description">
+                Fine-tuned and deployed a BERT-based question-answering pipeline extracting structured information from 5,000+ scanned TIFF images per day. Replaced a manual review process, reducing turnaround and human error while achieving an F1 score of 0.90.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Stack</span>
+                  <span class="detail-value">Python, PyTorch, Hugging Face Transformers, OpenCV, Tesseract OCR</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Impact</span>
+                  <span class="detail-value">5,000+ images processed daily · F1 = 0.90 · Manual process fully automated</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Role</span>
+                  <span class="detail-value">Model fine-tuning, dataset curation, pipeline architecture, production deployment</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-tag">AI Agents · Tooling</div>
+              <h3>Agentic Validation &amp; Developer Toolkit</h3>
+              <p class="project-description">
+                Built AI-powered validation agents using Pydantic AI for casing pressure analysis with structured input/output models and custom tool functions. Authored an agentic coding toolkit with Snowflake integration plugins, query-validation hooks, and developer productivity automations. Integrated OpenAI SDK for intelligent data enrichment.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Stack</span>
+                  <span class="detail-value">Python, Pydantic AI, OpenAI SDK, Snowflake, Fuse.js</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Highlights</span>
+                  <span class="detail-value">Structured agent I/O, custom tool functions, query-validation hooks, dev-loop automations</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section" id="experience">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Where I've shipped</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="role">Full-Stack Software Engineer</p>
+                <p class="company">Devon Energy</p>
+                <p class="dates">July 2024 – Present</p>
+                <p class="location">Oklahoma City, OK</p>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Sole architect and developer of a production Azure-hosted procurement &amp; demand forecasting platform used daily by drilling engineers and supply chain teams.</li>
+                  <li>Shipped the full stack on <strong>Azure App Service</strong> via multi-stage Docker builds pushed through <strong>Azure Container Registry</strong>, fronted by Nginx with API proxying to Express.</li>
+                  <li>Built end-to-end <strong>Azure AD SSO</strong> with MSAL (browser + backend token validation via Microsoft Graph) and 3-tier role-based access control.</li>
+                  <li>Integrated <strong>Azure Blob Storage</strong> with SAS URL generation for secure, time-limited document downloads.</li>
+                  <li>Designed a demand forecasting engine across 30–180 day horizons; 15+ Snowflake tables across 4 enterprise databases with parameterized SQL + CTEs.</li>
+                  <li>Cron-based weekly notification pipeline via <strong>Microsoft Graph API</strong> and <strong>Azure Logic Apps</strong> with exponential-backoff retries and missed-run recovery.</li>
+                  <li>Built a Python/PySpark real-time ingestion service feeding the OSIsoft PI historian — $2.5M projected annual savings, $40K/month recurring savings, field reliability lifted from &lt;80% to &gt;97%.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="role">Data Scientist</p>
+                <p class="company">RMS</p>
+                <p class="dates">April 2022 – November 2023</p>
+                <p class="location">Oklahoma City, OK</p>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Fine-tuned, trained, and deployed a <strong>BERT</strong> question-answering model extracting structured fields from 5,000+ TIFF images per day (F1 = 0.90), replacing a manual review process.</li>
+                  <li>Implemented time-series forecasting for daily inbound document volume; shipped Sisense and Power BI dashboards surfacing operational performance.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section split-layout" id="skills">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Skills</p>
+              <h2>Technical depth</h2>
+            </div>
+            <p class="section-copy">
+              Azure-first, full-stack. I build production systems end-to-end — cloud, auth, data, APIs, frontend, tests, and deployment.
+            </p>
+          </div>
+
+          <div class="skill-groups">
+            <article class="skill-card highlight">
+              <h3>Azure Cloud</h3>
+              <p>App Service · Blob Storage (SAS URLs) · Container Registry · Azure AD / MSAL · Logic Apps · Microsoft Graph API</p>
+            </article>
+            <article class="skill-card">
+              <h3>Languages</h3>
+              <p>TypeScript, JavaScript, Python, SQL, Bash</p>
+            </article>
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <p>React 18, Vite, Material-UI, Recharts, Plotly.js, React Query, React Hook Form, Zod</p>
+            </article>
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <p>Node.js, Express, REST APIs, node-cron, Flask, PySpark</p>
+            </article>
+            <article class="skill-card">
+              <h3>Data</h3>
+              <p>Snowflake (CTEs, parameterized SQL, connection pooling), OSIsoft PI, Pandas</p>
+            </article>
+            <article class="skill-card">
+              <h3>DevOps</h3>
+              <p>Docker (multi-stage), Nginx, Azure Container Registry, CI/CD pipelines, shell scripting</p>
+            </article>
+            <article class="skill-card">
+              <h3>AI / ML</h3>
+              <p>Pydantic AI, OpenAI SDK, Hugging Face Transformers, PyTorch, scikit-learn</p>
+            </article>
+            <article class="skill-card">
+              <h3>Testing</h3>
+              <p>Playwright (E2E, cross-browser, mobile), Vitest, Testing Library</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section split-layout" id="education">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Education</p>
+              <h2>Foundation</h2>
+            </div>
+          </div>
+
+          <div class="education-list">
+            <article class="education-card">
+              <h3>Oklahoma Christian University</h3>
+              <p class="education-degree">M.S. Data Science</p>
+              <p class="education-meta">Edmond, OK · 2021 – 2022 · GPA 3.78</p>
+            </article>
+
+            <article class="education-card">
+              <h3>Oklahoma Christian University</h3>
+              <p class="education-degree">B.S. Computer Science</p>
+              <p class="education-meta">Edmond, OK · 2016 – 2021</p>
+            </article>
+
+            <article class="education-card award">
+              <h3>Love's Entrepreneurs Cup — 1st Place</h3>
+              <p class="education-degree">$12,000 prize · 2020</p>
+              <p class="education-meta">Co-designed an ML + motion-capture system predicting workplace injuries; won Oklahoma's top student entrepreneurship competition.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section contact-section" id="contact">
+          <div class="contact-card">
+            <p class="eyebrow">Contact</p>
+            <h2>Open to full-stack &amp; cloud engineering roles</h2>
+            <p>
+              Looking for teams building serious systems on Azure. Happy to share the resume, walk through architecture, or talk through specific problems you're solving.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./Derrick_Karake_Resume.pdf" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+              <a class="button button-secondary" href="mailto:karakederrick@gmail.com">
+                Email Derrick
+              </a>
+              <a class="button button-secondary" href="tel:+14058879145">
+                Call 405-887-9145
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

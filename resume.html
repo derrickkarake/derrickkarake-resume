@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Derrick Karake — Resume</title>
+    <style>
+      @page { size: Letter; margin: 0.35in 0.5in; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+        color: #1c2a35;
+        font-size: 9.4pt;
+        line-height: 1.32;
+      }
+      h1 {
+        font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+        font-size: 21pt;
+        margin: 0 0 1px;
+        letter-spacing: 0.02em;
+      }
+      .contact {
+        font-size: 9pt;
+        color: #52606b;
+        margin-bottom: 6px;
+      }
+      .contact a { color: #52606b; text-decoration: none; }
+      h2 {
+        font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+        font-size: 10.2pt;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #703914;
+        border-bottom: 1px solid #703914;
+        padding-bottom: 1px;
+        margin: 8px 0 4px;
+      }
+      h3 {
+        font-size: 10pt;
+        margin: 4px 0 1px;
+        color: #1c2a35;
+      }
+      .role-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+      .role-meta { font-size: 8.8pt; color: #52606b; font-style: italic; }
+      .summary { margin: 1px 0 0; }
+      ul { margin: 2px 0 0; padding-left: 14px; }
+      li { margin-bottom: 1px; }
+      .skills-grid { display: grid; grid-template-columns: 82px 1fr; row-gap: 1px; column-gap: 10px; }
+      .skills-grid .label { font-weight: 700; color: #703914; font-size: 8.9pt; }
+      .skills-grid .val { font-size: 9.2pt; }
+      .project-title { font-weight: 700; }
+      .accent { color: #703914; font-weight: 700; }
+      .education-row { display: flex; justify-content: space-between; }
+      .small { font-size: 8.9pt; color: #52606b; }
+      .intro { margin: 2px 0 0; font-size: 9.4pt; }
+    </style>
+  </head>
+  <body>
+    <h1>Derrick Karake</h1>
+    <div class="contact">
+      Oklahoma City, OK &nbsp;·&nbsp; 405-887-9145 &nbsp;·&nbsp; karakederrick@gmail.com &nbsp;·&nbsp; github.com/derrickkarake
+    </div>
+
+    <h2>Summary</h2>
+    <p class="intro">
+      Full-stack software engineer specializing in <span class="accent">Azure cloud architecture</span> and production data systems. Sole designer and builder of a containerized, Azure-hosted procurement and forecasting platform in daily use at Devon Energy — from Snowflake queries and Node.js APIs to Azure AD SSO, Blob Storage, and CI/CD on App Service. Previously shipped real-time data pipelines and a BERT extraction system delivering $2.5M+ in projected annual savings.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="label">Azure</div><div class="val">App Service, Blob Storage (SAS URLs), Container Registry, Azure AD / MSAL, Logic Apps, Microsoft Graph API</div>
+      <div class="label">Languages</div><div class="val">TypeScript, JavaScript, Python, SQL, Bash</div>
+      <div class="label">Frontend</div><div class="val">React 18, Vite, Material-UI, Recharts, Plotly.js, React Query, React Hook Form, Zod</div>
+      <div class="label">Backend</div><div class="val">Node.js, Express, REST APIs, node-cron, Flask, PySpark</div>
+      <div class="label">Data</div><div class="val">Snowflake (CTEs, parameterized SQL, pooling), OSIsoft PI, Pandas</div>
+      <div class="label">DevOps</div><div class="val">Docker (multi-stage), Nginx, Azure Container Registry, CI/CD pipelines</div>
+      <div class="label">AI / ML</div><div class="val">Pydantic AI, OpenAI SDK, Hugging Face Transformers, PyTorch, scikit-learn</div>
+      <div class="label">Auth</div><div class="val">OAuth 2.0, JWT, RBAC, MSAL (browser + confidential client)</div>
+      <div class="label">Testing</div><div class="val">Playwright (E2E, cross-browser), Vitest, Testing Library</div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="role-row">
+      <h3>Full-Stack Software Engineer — Devon Energy</h3>
+      <div class="role-meta">Oklahoma City, OK · July 2024 – Present</div>
+    </div>
+    <p class="summary"><span class="project-title">Casing Procurement &amp; Demand Forecast Platform (Azure, production)</span> — sole architect and developer of an enterprise React/TypeScript + Node.js/Express platform used by drilling engineers and supply chain teams; migrated a legacy Python/Streamlit prototype into a containerized Azure deployment.</p>
+    <ul>
+      <li>Architected and deployed the full stack on <span class="accent">Azure App Service</span> via multi-stage Docker builds pushed through <span class="accent">Azure Container Registry</span>, fronted by Nginx with API proxying to the Express backend.</li>
+      <li>Built end-to-end <span class="accent">Azure AD SSO</span> with MSAL (browser popup/redirect + backend token validation via Microsoft Graph) and role-based access control (Admin / User / Viewer).</li>
+      <li>Integrated <span class="accent">Azure Blob Storage</span> for spec sheet documents with time-limited SAS URL generation for secure downloads.</li>
+      <li>Designed a demand forecasting engine projecting casing usage by SKU across 30–180 day horizons; queried 15+ Snowflake tables across 4 enterprise databases using parameterized SQL and CTEs.</li>
+      <li>Shipped an in-memory caching layer with stampede protection, stale-while-revalidate, and automatic invalidation; full Snowflake audit trail capturing before/after diffs and user attribution on all CRUD operations.</li>
+      <li>Built a cron-based weekly notification pipeline using <span class="accent">Microsoft Graph API</span> and <span class="accent">Azure Logic Apps</span> with exponential-backoff retries and missed-run recovery.</li>
+      <li>Authored Playwright E2E suites (admin, forecasting, audit, mobile) and Vitest unit tests for component and logic validation.</li>
+    </ul>
+    <p class="summary" style="margin-top:5px"><span class="project-title">Real-Time Frac Data Acquisition</span> — ingestion and device integration for live frac fleet telemetry.</p>
+    <ul>
+      <li>Built a Python/PySpark service pulling ~80 high-frequency telemetry files per frac fleet daily, running gap/spike validation and streaming into the <span class="accent">OSIsoft PI</span> historian.</li>
+      <li>Partnered with IT to replace third-party cellular links with direct VPN, lifting field data reliability from <span class="accent">&lt;80% to &gt;97%</span>.</li>
+      <li>Eliminated third-party data software dependency — <span class="accent">$40K/month</span> in recurring savings; projected <span class="accent">$2.5M/year</span> in acquisition-fee savings from in-house transmission.</li>
+    </ul>
+
+    <div class="role-row" style="margin-top:8px">
+      <h3>Data Scientist — RMS</h3>
+      <div class="role-meta">Oklahoma City, OK · April 2022 – November 2023</div>
+    </div>
+    <ul>
+      <li>Fine-tuned, trained, and deployed a <span class="accent">BERT</span> question-answering model extracting structured fields from <span class="accent">5,000+ TIFF images/day</span> (F1 = 0.90), replacing a manual review process.</li>
+      <li>Implemented time-series forecasting for daily inbound document volume; built Sisense and Power BI dashboards surfacing operational performance.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="education-row">
+      <div><strong>M.S. Data Science</strong> — Oklahoma Christian University, Edmond, OK</div>
+      <div class="small">2021 – 2022 · GPA 3.78</div>
+    </div>
+    <div class="education-row">
+      <div><strong>B.S. Computer Science</strong> — Oklahoma Christian University, Edmond, OK</div>
+      <div class="small">2016 – 2021</div>
+    </div>
+
+    <h2>Recognition</h2>
+    <p class="summary"><strong>Love's Entrepreneurs Cup — 1st Place ($12,000), 2020</strong> — Co-designed an ML + motion-capture system predicting workplace injuries; won Oklahoma's top student entrepreneurship competition.</p>
+  </body>
+</html>
