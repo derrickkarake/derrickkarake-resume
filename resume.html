@@ -96,17 +96,17 @@
         <li><span class="accent">Automated fallback subsystem:</span> primary/secondary ingestion paths with health checks, automatic failover on stream drop, retry with exponential backoff, and self-healing recovery on node or device loss — keeps ingestion flowing when upstream sources degrade.</li>
         <li><span class="accent">AI-powered backfill engine:</span> LLM-based agents (OpenAI SDK) parse <span class="accent">unstructured vendor PDF reports and heterogeneous CSV exports</span>, extract telemetry fields, and map varied service-provider schemas into PI-compatible format for historical gap recovery.</li>
         <li><span class="accent">React monitoring app:</span> operator-facing frontend (React + Node.js) for live ingestion status, data-quality inspection, manual backfill triggers, and fallback/failover visibility — used daily by completions engineers.</li>
-        <li>Partnered with IT to replace third-party cellular links with direct VPN, lifting field data reliability from <span class="accent">&lt;80% to &gt;97%</span>.</li>
-        <li>Eliminated third-party data software dependency — <span class="accent">$40K/month</span> recurring savings; projected <span class="accent">$2.5M/year</span> in acquisition-fee savings from in-house transmission.</li>
+        <li>Partnered with IT to replace third-party cellular links with direct VPN (field data reliability <span class="accent">&lt;80% → &gt;97%</span>); eliminated the third-party data software dependency — <span class="accent">$40K/month</span> recurring savings and projected <span class="accent">$2.5M/year</span> in acquisition-fee savings from in-house transmission.</li>
       </ul>
     </div>
 
     <p class="summary" style="margin-top:6px"><span class="project-title">Casing Procurement &amp; Demand Forecast Platform (Azure, production)</span> — React/TypeScript + Node.js platform supporting a <span class="accent">$350M casing procurement program</span>; migrated a legacy Python/Streamlit prototype into a containerized Azure deployment.</p>
     <ul>
-      <li>Built an <span class="accent">ML/AI forecasting engine</span> projecting casing usage by SKU (OD, weight, grade, connection) and delivery schedules across 30–180 day horizons — reducing carrying cost, stockouts, and overbuy against the $350M program.</li>
+      <li>Built an <span class="accent">ML/AI forecasting engine</span> projecting casing usage by SKU (OD, weight, grade, connection) across 30–180 day and full-year horizons — continuously re-tunes model parameters against drilling and completion schedule changes to produce exact per-SKU counts and delivery windows for the $350M program.</li>
+      <li><span class="accent">Multi-stakeholder input pipeline:</span> drilling engineers submit per-well casing plans, supply chain teams feed in-flight inventory and buffer thresholds, and casing providers contribute lead-time and shipment commitments — all rolled into each forecast run so the model reflects real-time field, inventory, and vendor reality.</li>
+      <li><span class="accent">Year-ahead delivery projection layer</span> schedules rig-level casing deliveries across the full forward program, auto-rebalancing whenever drilling order, completion pace, or provider lead times shift — preventing stockouts while minimizing carrying cost.</li>
       <li>Full Azure stack: <span class="accent">App Service</span>, <span class="accent">Container Registry</span>, <span class="accent">Azure AD SSO</span> (MSAL + Graph API) with 3-tier RBAC, <span class="accent">Blob Storage</span> with SAS URL generation, and <span class="accent">Logic Apps</span> + Graph for the cron notification pipeline.</li>
       <li>Queried 15+ Snowflake tables across 4 enterprise databases via parameterized SQL / CTEs; shipped in-memory caching with stampede protection and a full Snowflake audit trail (before/after diffs, user attribution) across all CRUD operations.</li>
-      <li>Playwright E2E suites (admin, forecasting, audit, mobile) + Vitest unit tests.</li>
     </ul>
 
     <div class="role-row" style="margin-top:6px">
