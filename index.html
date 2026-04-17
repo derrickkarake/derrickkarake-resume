@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Derrick Karake | Full-Stack Engineer — Azure Cloud</title>
+    <title>Derrick Karake | Senior Data Scientist — ML, MLOps, Production Systems</title>
     <meta
       name="description"
-      content="Derrick Karake — full-stack software engineer specializing in Azure cloud architecture, production data systems, and enterprise web platforms."
+      content="Derrick Karake — full-stack data scientist building production ML and AI-integrated systems for energy operations. Sole architect of a real-time frac data acquisition platform and an ML-driven procurement forecasting platform."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -17,6 +17,7 @@
           <span class="brand">DK</span>
           <div class="topbar-links">
             <a href="#systems">Systems</a>
+            <a href="#ml">ML Coverage</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
@@ -26,10 +27,10 @@
 
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Full-Stack Engineer · Azure Cloud · Systems Builder</p>
+            <p class="eyebrow">Full-Stack Data Scientist · ML · MLOps · Systems Architect</p>
             <h1>Derrick Karake</h1>
             <p class="hero-summary">
-              Full-stack software engineer specializing in <strong>Azure cloud architecture</strong> and production data systems. I design, build, and ship enterprise platforms end-to-end — from Snowflake and Node.js APIs to Azure AD SSO, Blob Storage, and containerized deployments on App Service.
+              Senior-level data scientist and <strong>sole architect</strong> of two production systems at Devon Energy — a real-time frac data acquisition platform with <strong>AI-integrated agents</strong> and an <strong>ML-driven forecasting platform</strong> (decision trees + logistic regression, full Azure MLOps) supporting a <strong>$350M procurement program</strong>. Broad ML coverage across classical models, deep learning, and LLMs — with the communication chops to bridge data science and business stakeholders.
             </p>
 
             <div class="hero-actions">
@@ -48,11 +49,11 @@
           <aside class="hero-panel">
             <div class="panel-card">
               <p class="panel-label">Based In</p>
-              <p class="panel-value">Oklahoma City, Oklahoma</p>
+              <p class="panel-value">Oklahoma City, Oklahoma · Open to remote (EST/CST friendly)</p>
             </div>
             <div class="panel-card">
-              <p class="panel-label">Core Focus</p>
-              <p class="panel-value">Azure cloud, full-stack systems, data platforms</p>
+              <p class="panel-label">Focus</p>
+              <p class="panel-value">Production ML systems, MLOps, LLM agents, enterprise data platforms</p>
             </div>
             <div class="panel-card">
               <p class="panel-label">Contact</p>
@@ -74,20 +75,20 @@
 
           <div class="metrics-grid">
             <article class="metric-card">
+              <p class="metric-value">$350M</p>
+              <p class="metric-label">Procurement program powered by ML forecasting model (decision trees + logistic regression)</p>
+            </article>
+            <article class="metric-card">
               <p class="metric-value">$2.5M</p>
-              <p class="metric-label">Projected annual savings from real-time data acquisition pipelines</p>
+              <p class="metric-label">Projected annual savings from the frac data acquisition platform</p>
             </article>
             <article class="metric-card">
               <p class="metric-value">$40K/mo</p>
-              <p class="metric-label">Recurring savings from eliminating third-party data software</p>
+              <p class="metric-label">Recurring savings from eliminating third-party vendor software</p>
             </article>
             <article class="metric-card">
               <p class="metric-value">97%+</p>
               <p class="metric-label">Field data reliability after pipeline + device overhaul (from &lt;80%)</p>
-            </article>
-            <article class="metric-card">
-              <p class="metric-value">5,000+</p>
-              <p class="metric-label">TIFF images processed daily by a fine-tuned BERT extraction system</p>
             </article>
           </div>
         </section>
@@ -95,66 +96,90 @@
         <section class="content-section" id="systems">
           <div class="section-heading">
             <p class="eyebrow">Systems I've Built</p>
-            <h2>Enterprise platforms on Azure</h2>
+            <h2>Production platforms, sole architect</h2>
           </div>
           <p class="section-intro">
-            The systems below are production platforms I designed and shipped end-to-end — cloud architecture, authentication, data, APIs, frontend, testing, and deployment. Each is currently in use by engineering and operations teams.
+            The systems below are production platforms I designed and shipped end-to-end — ML models, cloud architecture, data pipelines, authentication, APIs, frontend, testing, and deployment. Each is in daily use by engineering and operations teams at Devon Energy.
           </p>
 
           <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-tag">Azure · Full-Stack · Production</div>
-              <h3>Casing Procurement &amp; Demand Forecast Platform</h3>
+            <article class="project-card flagship-card">
+              <div class="project-tag">Flagship · AI-Integrated · Production</div>
+              <h3>Real-Time Frac Data Acquisition Platform</h3>
               <p class="project-description">
-                Sole architect and developer of an enterprise React/TypeScript + Node.js/Express platform used daily by drilling engineers and supply chain teams at Devon Energy. Migrated a legacy Python/Streamlit prototype into a containerized, audit-compliant Azure deployment with SSO, role-based access, and a full Snowflake audit trail.
+                Sole architect of an end-to-end ingestion, validation, and AI-assisted backfill platform replacing a third-party vendor pipeline. Supports live frac fleet operations across Devon's field footprint — built on integrated agents, automated fallback, an LLM-powered backfill engine, and a React monitoring app used daily by completions engineers.
               </p>
               <div class="project-details">
                 <div class="detail-item">
-                  <span class="detail-label">Azure</span>
-                  <span class="detail-value">App Service, Container Registry, Blob Storage (SAS URLs), Azure AD / MSAL, Logic Apps, Microsoft Graph API</span>
+                  <span class="detail-label">Agents</span>
+                  <span class="detail-value">Python/PySpark ingestion agents pull ~80 high-frequency telemetry files per frac fleet daily, run gap/spike validation, and stream clean data into the OSIsoft PI historian in near-real-time.</span>
                 </div>
                 <div class="detail-item">
-                  <span class="detail-label">Stack</span>
-                  <span class="detail-value">React 18, TypeScript, Vite, MUI, Node.js, Express, Snowflake, Docker, Nginx</span>
+                  <span class="detail-label">Fallback</span>
+                  <span class="detail-value">Primary/secondary ingestion paths with health checks, automatic failover on stream drop, exponential backoff retries, and self-healing recovery on node or device loss — keeps ingestion flowing when upstream sources degrade.</span>
                 </div>
                 <div class="detail-item">
-                  <span class="detail-label">Highlights</span>
-                  <span class="detail-value">Azure AD SSO + RBAC (3-tier), multi-stage Docker + ACR pipeline, SAS-secured document downloads, full audit trail, cron email pipeline with retry + missed-run recovery</span>
+                  <span class="detail-label">AI Backfill</span>
+                  <span class="detail-value">LLM-based agents (OpenAI SDK) parse unstructured vendor PDF reports and heterogeneous CSV exports, extract telemetry fields, and map varied service-provider schemas into PI-compatible format for historical gap recovery.</span>
                 </div>
                 <div class="detail-item">
-                  <span class="detail-label">Testing</span>
-                  <span class="detail-value">Playwright E2E (admin, forecasting, audit, mobile) + Vitest unit tests</span>
+                  <span class="detail-label">Frontend</span>
+                  <span class="detail-value">React + Node.js operator-facing monitoring app — live ingestion status, data-quality inspection, manual backfill triggers, and fallback/failover visibility. Used daily by completions engineers.</span>
                 </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-tag">Data Engineering · IoT · Azure</div>
-              <h3>Real-Time Frac Data Acquisition Pipeline</h3>
-              <p class="project-description">
-                End-to-end ingestion system that collects, validates, and streams high-frequency telemetry from frac fleets into an OSIsoft PI time-series historian. Replaced third-party cellular links with direct VPN in partnership with IT, moving field data reliability from below 80% to above 97%.
-              </p>
-              <div class="project-details">
                 <div class="detail-item">
-                  <span class="detail-label">Stack</span>
-                  <span class="detail-value">Python, PySpark, PI Web API, Serial I/O, Azure, Node-RED</span>
+                  <span class="detail-label">Infra</span>
+                  <span class="detail-value">Partnered with IT to replace third-party cellular links with direct VPN; data reliability &lt;80% → &gt;97%.</span>
                 </div>
                 <div class="detail-item">
                   <span class="detail-label">Impact</span>
-                  <span class="detail-value">$2.5M projected annual savings · $40K/month recurring savings · 97%+ data completeness</span>
+                  <span class="detail-value">$40K/month recurring savings · $2.5M/year projected acquisition-fee savings · replaced an entire vendor pipeline</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card flagship-card">
+              <div class="project-tag">ML + MLOps · Azure · $350M Program</div>
+              <h3>Casing Procurement &amp; Demand Forecast Platform</h3>
+              <p class="project-description">
+                React/TypeScript + Node.js platform on Azure supporting a $350M casing procurement program. Built a production forecasting model combining decision trees and logistic regression with end-to-end MLOps — continuously re-tuning against drilling and completion schedule changes to produce exact per-SKU counts and delivery windows for the forward year.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">ML Model</span>
+                  <span class="detail-value">Decision trees + logistic regression ensemble. Re-scores casing needs by SKU (OD, weight, grade, connection) across 30–180 day and full-year horizons as drilling and completion operations shift day-to-day.</span>
                 </div>
                 <div class="detail-item">
-                  <span class="detail-label">Scale</span>
-                  <span class="detail-value">~80 high-frequency CSV files per frac fleet, daily, with gap/spike validation and automated error handling</span>
+                  <span class="detail-label">MLOps</span>
+                  <span class="detail-value">Fully deployed on Azure with automated retraining pipelines, drift monitoring, model observability, and production-grade error handling — continuously keeps model outputs aligned with real field conditions.</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Stakeholder Inputs</span>
+                  <span class="detail-value">Drilling engineers submit per-well casing plans, supply chain teams feed in-flight inventory and buffer thresholds, and casing providers contribute lead-time and shipment commitments — all rolled into each forecast run.</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Delivery Layer</span>
+                  <span class="detail-value">Year-ahead delivery projection schedules rig-level casing deliveries across the full forward program, auto-rebalancing whenever drilling order, completion pace, or provider lead times shift.</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Azure Stack</span>
+                  <span class="detail-value">App Service, Container Registry, Azure AD SSO (MSAL + Graph API, 3-tier RBAC), Blob Storage (SAS URLs), Logic Apps + Graph API cron pipeline.</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Data</span>
+                  <span class="detail-value">15+ Snowflake tables across 4 enterprise databases, parameterized SQL/CTEs, in-memory caching with stampede protection, full audit trail (before/after diffs, user attribution) on every CRUD op.</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Quality</span>
+                  <span class="detail-value">Playwright E2E (admin, forecasting, audit, mobile) + Vitest unit tests — production-grade testing at enterprise scale.</span>
                 </div>
               </div>
             </article>
 
             <article class="project-card">
-              <div class="project-tag">NLP · Deep Learning · Production</div>
+              <div class="project-tag">Deep Learning · NLP · Production</div>
               <h3>BERT Document Intelligence System</h3>
               <p class="project-description">
-                Fine-tuned and deployed a BERT-based question-answering pipeline extracting structured information from 5,000+ scanned TIFF images per day. Replaced a manual review process, reducing turnaround and human error while achieving an F1 score of 0.90.
+                Fine-tuned and deployed a BERT-based question-answering pipeline extracting structured fields from 5,000+ scanned TIFF images per day at RMS. Replaced a manual review workflow, reducing turnaround and human error while achieving an F1 score of 0.90.
               </p>
               <div class="project-details">
                 <div class="detail-item">
@@ -162,18 +187,18 @@
                   <span class="detail-value">Python, PyTorch, Hugging Face Transformers, OpenCV, Tesseract OCR</span>
                 </div>
                 <div class="detail-item">
-                  <span class="detail-label">Impact</span>
-                  <span class="detail-value">5,000+ images processed daily · F1 = 0.90 · Manual process fully automated</span>
+                  <span class="detail-label">Scale</span>
+                  <span class="detail-value">5,000+ images processed daily · F1 = 0.90 · full manual process automated</span>
                 </div>
                 <div class="detail-item">
                   <span class="detail-label">Role</span>
-                  <span class="detail-value">Model fine-tuning, dataset curation, pipeline architecture, production deployment</span>
+                  <span class="detail-value">Model fine-tuning, dataset curation, pipeline architecture, production deployment, monitoring</span>
                 </div>
               </div>
             </article>
 
             <article class="project-card">
-              <div class="project-tag">AI Agents · Tooling</div>
+              <div class="project-tag">AI Agents · Developer Tooling</div>
               <h3>Agentic Validation &amp; Developer Toolkit</h3>
               <p class="project-description">
                 Built AI-powered validation agents using Pydantic AI for casing pressure analysis with structured input/output models and custom tool functions. Authored an agentic coding toolkit with Snowflake integration plugins, query-validation hooks, and developer productivity automations. Integrated OpenAI SDK for intelligent data enrichment.
@@ -192,6 +217,43 @@
           </div>
         </section>
 
+        <section class="content-section" id="ml">
+          <div class="section-heading">
+            <p class="eyebrow">ML Coverage</p>
+            <h2>Broad, not narrow</h2>
+          </div>
+          <p class="section-intro">
+            I've shipped across classical ML, deep learning, and LLM agents — production, not just notebooks. My view: LLMs are one tool in the box. The right model depends on the problem, the data, and what you can operate at scale.
+          </p>
+
+          <div class="skill-groups ml-grid">
+            <article class="skill-card">
+              <h3>Classical ML</h3>
+              <p>Decision trees (random forest, gradient boosting), logistic regression, linear regression, clustering (k-means, hierarchical), time-series forecasting, scikit-learn, XGBoost</p>
+            </article>
+            <article class="skill-card">
+              <h3>Deep Learning / NLP</h3>
+              <p>BERT fine-tuning, PyTorch, Hugging Face Transformers, CNN architectures, OpenCV, Tesseract OCR</p>
+            </article>
+            <article class="skill-card">
+              <h3>LLMs &amp; Agents</h3>
+              <p>OpenAI SDK, Pydantic AI, LLM-based agents for structured extraction (PDF/CSV → schemas), tool-using agents, prompt engineering, structured I/O</p>
+            </article>
+            <article class="skill-card">
+              <h3>MLOps / Production</h3>
+              <p>Automated retraining, drift monitoring, model observability, containerized deployment on Azure, production error handling, A/B-style model comparison</p>
+            </article>
+            <article class="skill-card">
+              <h3>Statistics &amp; Analysis</h3>
+              <p>Regression analysis, hypothesis testing, distributional analysis, exploratory data analysis, time-series decomposition, feature engineering</p>
+            </article>
+            <article class="skill-card">
+              <h3>Visualization</h3>
+              <p>Power BI, Sisense, Recharts, Plotly.js, MUI Data Grid — dashboards and operator-facing UIs for non-technical stakeholders</p>
+            </article>
+          </div>
+        </section>
+
         <section class="content-section" id="experience">
           <div class="section-heading">
             <p class="eyebrow">Experience</p>
@@ -201,20 +263,19 @@
           <div class="timeline">
             <article class="timeline-item">
               <div class="timeline-meta">
-                <p class="role">Full-Stack Software Engineer</p>
+                <p class="role">Full-Stack Data Scientist</p>
                 <p class="company">Devon Energy</p>
                 <p class="dates">July 2024 – Present</p>
                 <p class="location">Oklahoma City, OK</p>
               </div>
               <div class="timeline-body">
                 <ul>
-                  <li>Sole architect and developer of a production Azure-hosted procurement &amp; demand forecasting platform used daily by drilling engineers and supply chain teams.</li>
-                  <li>Shipped the full stack on <strong>Azure App Service</strong> via multi-stage Docker builds pushed through <strong>Azure Container Registry</strong>, fronted by Nginx with API proxying to Express.</li>
-                  <li>Built end-to-end <strong>Azure AD SSO</strong> with MSAL (browser + backend token validation via Microsoft Graph) and 3-tier role-based access control.</li>
-                  <li>Integrated <strong>Azure Blob Storage</strong> with SAS URL generation for secure, time-limited document downloads.</li>
-                  <li>Designed a demand forecasting engine across 30–180 day horizons; 15+ Snowflake tables across 4 enterprise databases with parameterized SQL + CTEs.</li>
-                  <li>Cron-based weekly notification pipeline via <strong>Microsoft Graph API</strong> and <strong>Azure Logic Apps</strong> with exponential-backoff retries and missed-run recovery.</li>
-                  <li>Built a Python/PySpark real-time ingestion service feeding the OSIsoft PI historian — $2.5M projected annual savings, $40K/month recurring savings, field reliability lifted from &lt;80% to &gt;97%.</li>
+                  <li><strong>Sole architect</strong> of two production platforms used daily by drilling, completions, and supply chain teams.</li>
+                  <li>Shipped a <strong>decision-tree + logistic-regression</strong> forecasting model with <strong>end-to-end Azure MLOps</strong> (automated retraining, drift monitoring, model observability) powering a <strong>$350M casing procurement program</strong>.</li>
+                  <li>Designed a multi-stakeholder input pipeline aggregating signals from drilling engineers, supply chain, and casing providers into every forecast run — strong cross-functional communication across technical and non-technical teams.</li>
+                  <li>Built a real-time frac data acquisition platform with <strong>integrated AI agents</strong>, automated fallback, and an <strong>LLM-based backfill engine</strong> parsing unstructured vendor PDFs and CSVs into PI-compatible schemas.</li>
+                  <li>Containerized React + Node.js applications on <strong>Azure App Service</strong> (multi-stage Docker, ACR, Azure AD SSO, Blob Storage SAS URLs, Logic Apps, Microsoft Graph API).</li>
+                  <li>Delivered $2.5M/year projected savings, $40K/month recurring, field data reliability lifted from &lt;80% to &gt;97%.</li>
                 </ul>
               </div>
             </article>
@@ -229,7 +290,8 @@
               <div class="timeline-body">
                 <ul>
                   <li>Fine-tuned, trained, and deployed a <strong>BERT</strong> question-answering model extracting structured fields from 5,000+ TIFF images per day (F1 = 0.90), replacing a manual review process.</li>
-                  <li>Implemented time-series forecasting for daily inbound document volume; shipped Sisense and Power BI dashboards surfacing operational performance.</li>
+                  <li>Implemented time-series forecasting for daily inbound document volume; built <strong>Power BI</strong> and Sisense dashboards surfacing operational performance to leadership.</li>
+                  <li>Owned the dataset curation, evaluation harness, and post-deployment monitoring — translating model metrics into business terms for ops stakeholders.</li>
                 </ul>
               </div>
             </article>
@@ -243,42 +305,50 @@
               <h2>Technical depth</h2>
             </div>
             <p class="section-copy">
-              Azure-first, full-stack. I build production systems end-to-end — cloud, auth, data, APIs, frontend, tests, and deployment.
+              Production-grade ML, cloud, and full-stack — enterprise code with error handling, testing, and observability.
             </p>
           </div>
 
           <div class="skill-groups">
             <article class="skill-card highlight">
+              <h3>Languages &amp; Data</h3>
+              <p>Python, SQL, TypeScript, JavaScript, Bash · Snowflake, OSIsoft PI, PySpark, Pandas, Hive/Hadoop-style SQL-on-big-data patterns</p>
+            </article>
+            <article class="skill-card">
+              <h3>ML / AI</h3>
+              <p>Decision trees, logistic regression, random forest, XGBoost, clustering, BERT, PyTorch, Hugging Face, LLM agents, OpenAI SDK, Pydantic AI, scikit-learn, time-series forecasting</p>
+            </article>
+            <article class="skill-card">
+              <h3>MLOps</h3>
+              <p>Automated retraining, drift monitoring, model observability, containerized deployment, production error handling, regression testing on model outputs</p>
+            </article>
+            <article class="skill-card">
               <h3>Azure Cloud</h3>
               <p>App Service · Blob Storage (SAS URLs) · Container Registry · Azure AD / MSAL · Logic Apps · Microsoft Graph API</p>
             </article>
             <article class="skill-card">
-              <h3>Languages</h3>
-              <p>TypeScript, JavaScript, Python, SQL, Bash</p>
+              <h3>Big Data / Spark</h3>
+              <p>PySpark pipelines, high-frequency ingestion (~80 files/fleet/day), gap/spike validation, stream processing into time-series historians</p>
             </article>
             <article class="skill-card">
               <h3>Frontend</h3>
-              <p>React 18, Vite, Material-UI, Recharts, Plotly.js, React Query, React Hook Form, Zod</p>
+              <p>React 18, TypeScript, Vite, Material-UI, Recharts, Plotly.js, React Query, React Hook Form, Zod</p>
             </article>
             <article class="skill-card">
               <h3>Backend</h3>
-              <p>Node.js, Express, REST APIs, node-cron, Flask, PySpark</p>
+              <p>Node.js, Express, Flask, REST APIs, node-cron, multi-agent pipeline design</p>
             </article>
             <article class="skill-card">
-              <h3>Data</h3>
-              <p>Snowflake (CTEs, parameterized SQL, connection pooling), OSIsoft PI, Pandas</p>
+              <h3>DevOps &amp; Testing</h3>
+              <p>Docker (multi-stage), Nginx, Azure Container Registry, CI/CD, Playwright (E2E), Vitest, Testing Library</p>
             </article>
             <article class="skill-card">
-              <h3>DevOps</h3>
-              <p>Docker (multi-stage), Nginx, Azure Container Registry, CI/CD pipelines, shell scripting</p>
+              <h3>Visualization</h3>
+              <p>Power BI, Sisense, Recharts, Plotly.js, MUI Data Grid — dashboards for technical and non-technical audiences</p>
             </article>
             <article class="skill-card">
-              <h3>AI / ML</h3>
-              <p>Pydantic AI, OpenAI SDK, Hugging Face Transformers, PyTorch, scikit-learn</p>
-            </article>
-            <article class="skill-card">
-              <h3>Testing</h3>
-              <p>Playwright (E2E, cross-browser, mobile), Vitest, Testing Library</p>
+              <h3>Statistics</h3>
+              <p>Regression, hypothesis testing, distributional analysis, exploratory analysis, feature engineering</p>
             </article>
           </div>
         </section>
@@ -292,6 +362,12 @@
           </div>
 
           <div class="education-list">
+            <article class="education-card award">
+              <h3>M.S. Artificial Intelligence</h3>
+              <p class="education-degree">In Progress · Started October 2025</p>
+              <p class="education-meta">Deepening expertise in advanced ML, neural network architectures, and applied AI research.</p>
+            </article>
+
             <article class="education-card">
               <h3>Oklahoma Christian University</h3>
               <p class="education-degree">M.S. Data Science</p>
@@ -304,7 +380,7 @@
               <p class="education-meta">Edmond, OK · 2016 – 2021</p>
             </article>
 
-            <article class="education-card award">
+            <article class="education-card">
               <h3>Love's Entrepreneurs Cup — 1st Place</h3>
               <p class="education-degree">$12,000 prize · 2020</p>
               <p class="education-meta">Co-designed an ML + motion-capture system predicting workplace injuries; won Oklahoma's top student entrepreneurship competition.</p>
@@ -315,9 +391,9 @@
         <section class="content-section contact-section" id="contact">
           <div class="contact-card">
             <p class="eyebrow">Contact</p>
-            <h2>Open to full-stack &amp; cloud engineering roles</h2>
+            <h2>Open to senior data science &amp; ML engineering roles</h2>
             <p>
-              Looking for teams building serious systems on Azure. Happy to share the resume, walk through architecture, or talk through specific problems you're solving.
+              Looking for teams solving real production problems with ML — predictive, prescriptive, or agentic. Happy to walk through system architecture, talk through specific problems you're solving, or share more detail on any of the work above.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="./Derrick_Karake_Resume.pdf" target="_blank" rel="noreferrer">

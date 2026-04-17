@@ -403,17 +403,33 @@ h3 {
 
 .detail-value { color: var(--ink-muted); }
 
+.flagship-card {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(158, 91, 42, 0.1), rgba(158, 91, 42, 0.02));
+  border-color: rgba(158, 91, 42, 0.22);
+}
+
+.flagship-card .project-tag {
+  background: linear-gradient(135deg, rgba(158, 91, 42, 0.22), rgba(158, 91, 42, 0.1));
+  border-color: rgba(158, 91, 42, 0.32);
+}
+
+.ml-grid { grid-template-columns: repeat(3, 1fr); }
+.ml-grid .skill-card { background: var(--panel); }
+
 @media (max-width: 920px) {
   .hero-grid,
   .timeline-item,
   .split-layout,
   .metrics-grid,
   .projects-grid,
-  .skill-groups {
+  .skill-groups,
+  .ml-grid {
     grid-template-columns: 1fr;
   }
   h2 { max-width: none; }
-  .skill-card.highlight { grid-column: auto; }
+  .skill-card.highlight,
+  .flagship-card { grid-column: auto; }
 }
 
 @media (max-width: 640px) {
